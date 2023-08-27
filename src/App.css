@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+/* SuperAdminHome.css (create a new CSS file if you haven't already) */
+.Edit {
+  background-color: #00b4a1;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  border: none;
+}
+.Delete {
+  background-color: red;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  border: none;
+}
+/* Styling for the whole SuperAdminHome component */
+.SuperAdminHome {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Styling for the clickable panels */
+.panel-wrapper {
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #c1c1c1;
+}
+.profilep{
+  & p{
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.panel-wrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.material-icons {
+  font-size: 30px;
+  margin: 0px 10px 0px 0px;
+  color: #00b4a1;
+}
+.like {
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  margin: 5px;
+  font-size: 30px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #e0e0e0;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.liked {
+  color: red;
+}
+.like:hover {
+  background-color: #f2f2f2;
+  color: grey;
+  opacity: 0.5;
+}
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 190px;
+  height: 190px;
+  background-color: none;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  & .material-icons {
+    font-size: 30px;
+  }
+  & h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  & p {
+    font-size: 24px;
+  }
+}
+
+.panel:hover {
+  background-color: #e0e0e0;
+}
+
+.panel h3 {
+  margin: 0;
+  color: #333;
+}
+
+/* Styling for the customer and properties data sections */
+.data-section {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.data-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.data-section pre {
+  white-space: pre-wrap;
+}
+/* Reset default table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Set table header styles */
+thead {
+  background-color: #f2f2f2;
+}
+
+thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Set alternating row colors for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add responsive styles */
+@media screen and (max-width: 768px) {
+  /* Hide table headers on smaller screens */
+
+  /* Display table rows as blocks to stack them vertically */
+
+  /* Add space between each row */
+  tbody tr {
+    margin-bottom: 10px;
+  }
+
+  /* Set individual row styles */
+  tbody td {
+    /* Add padding for better spacing */
+    padding: 8px;
+    /* Add a border to separate each cell */
+    border: 1px solid #ddd;
+  }
+}
+/* Style for input elements and textareas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 80%;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: #c1c1c1;
+}
+.w-707 {
+  width: 80%;
+}
+/* Style for form elements */
+form {
+  padding: 40px 20px;
+
+  & div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  & label {
+    width: 180px;
+    font-size: 18px;
+  }
+  & select {
+    width: 250px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0px 10px 0px 0px;
+  }
+}
+#w-250 {
+  width: 250px;
+  margin: 5px 10px 0px 0px;
+}
+.ame {
+  display: flex;
+  flex-wrap: wrap;
+  & div {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    & label {
+      width: 150px;
+      margin: 0px;
+    }
+  }
+}
+.grid-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Style for checkboxes and labels */
+input[type="checkbox"] {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for file upload input */
+/* input[type="file"] {
+  display: none; /* Hide the default file input button 
+} */
+
+.custom-upload-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-upload-button:hover {
+  background-color: #0056b3;
+}
+
+option {
+  text-align: left !important;
+  color: black;
+}
+button {
+  cursor: pointer;
+}
+/* styles.css */
+
+/* Switch container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+  & input {
+    visibility: hidden;
+  }
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+/* The slider before (default state) */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When the checkbox is checked, toggle the slider */
+input[type="checkbox"]:checked + .slider {
+  background-color: #2196f3;
+}
+
+/* When the checkbox is checked, move the slider to the right */
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.tableHol {
+  padding: 40px 0px;
+}
+.main-but {
+  & button {
+    margin: 0px 50px;
+  }
+}
+.preview {
+  width: 100%;
+  padding: 20px 0px;
+  & .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 20px 0px 0px;
+    & button {
+      padding: 8px 15px;
+      background: black;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  & img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+.button-float {
+  position: fixed;
+  z-index: 999999;
+  bottom: 10px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background: #00b1a4;
+  & h1 {
+    font-size: 50px;
+  }
+  & i {
+    color: white;
+    font-size: 35px;
+  }
+  cursor: pointer;
+}
+.Editform {
+  display: flex;
+  & input {
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  & select {
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #c5c5c5;
+    margin-right: 5px;
+  }
+  & button {
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.Phonep{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profw{
+  width: 500px;
+  & input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 0px 10px;
+  }
+  & button{
+    margin: 10px 5px 0px 0px;
+    width: 100px;
+  }
+}
+.deal-card{
+  width: 250px;
+  height: auto;
+  background-color: aliceblue;
+  & .img-deal-card{
+       & img{
+          width: 100%;
+          height: 300px;
+        
+          aspect-ratio: 3/2;
+  
+          object-fit: cover;
+       }
+      cursor: pointer; 
+  }
+  & h3{
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0px 20px;
+  }
+  & p{
+      font-size: 14px;
+      color: #616161;
+      padding: 5px 20px;
+      font-weight: 500;
+  }
+  }

@@ -1,0 +1,24 @@
+1. Provide a link to access the current builder user profile.
+
+2. Implement a user registration process specifically for builders. /agents 
+The builder's profile should incorporate a form for entering their details.
+  
+3. Relocate the title of the hero section to the right side, positioned over the image. Just like Instagram 
+ (Commpleted)
+
+4. Integrate a Login form card, inspired by the layout used in Instagram, within the hero section.
+ (Completed)
+
+5. Apply watermarks to the property images.( sold out/ customizable prizing can be added/top deals )
+ (Completed)
+
+6. Hide property prices, make visible for registered agents and admin and super admin .
+ (Completed)
+
+7. Establish a "Best Deals" section to showcase the most recent or trending deals that have been set by the admin. 
+  (Completed)
+
+8. And most liked ❤️ and viewed and favorite would visible in top deals 
+ (Completed)
+
+9. Attach verification and trusted badges to property cards and property pages. 
